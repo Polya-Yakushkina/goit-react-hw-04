@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import css from "./ImageCard.module.css";
 
-export default function () {
+export default function ImageCard ({ image, onClick  }) {
     return (
-        <div>
-            <img src="" alt="" />
+        <div className={clsx(css.item)} onClick={onClick}>
+            <img src={image.urls.small} alt={image.alt_description} />
         </div>
     );
 }
