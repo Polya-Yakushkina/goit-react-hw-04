@@ -5,7 +5,7 @@ import css from "./ImageGallery.module.css";
 
 export default function ImageGallery({ items, onImageClick }) {
     return (
-        <ul className={clsx(css.container)}>
+        <ul className={clsx(css.list)}>
             {items.map((item) => (
                 <li key={item.id} className={clsx(css.item)}>
                     <ImageCard
